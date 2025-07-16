@@ -1,0 +1,20 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "学习typescript的一个仓库",
+  "main": "index.ts",
+  "author": "kz137onethe",
+  "engines": {
+    "node": ">=20.17.0",
+    "rimraf": ">=6.0.0",
+    "pnpm": ">=9.15.2",
+    "typescript": ">=5.6.0"
+  },
+  "scripts": {},
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

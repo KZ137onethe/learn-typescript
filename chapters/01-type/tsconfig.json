@@ -1,0 +1,16 @@
+{
+  "extends": "../../packages/tsconfig/file/browser.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+  },
+  "include": [
+    "./src"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
