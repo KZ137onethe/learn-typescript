@@ -15,3 +15,7 @@ let name2: string = name1
 // 这样就没问题 any类型是可以的
 let name3: any = '123'
 let name4: string = name3
+
+module.exports = {
+  name4
+}

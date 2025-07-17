@@ -1,16 +1,12 @@
 {
-  "extends": "../../packages/tsconfig/file/browser.json",
+  "extends": "../../packages/tsconfig/file/node.json",
   "compilerOptions": {
-    "lib": [
-      "ESNext"
-    ],
+    // 指定输出目录
+    "outDir":"./build",
+    "baseUrl": "./",
+    "types":[]
   },
   "include": [
     "./src"
   ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
 }

@@ -2,3 +2,6 @@ packages:
   - "chapters/*"
   - "packages/*"
   - "playground/*"
+
+catalog:
+  "@types/node": ^24.0.14

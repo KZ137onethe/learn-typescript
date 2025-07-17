@@ -14,8 +14,16 @@ importers:
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
+    devDependencies:
+      '@types/node':
+        specifier: ^24.0.14
+        version: 24.0.14
 
-  chapters/01-type: {}
+  chapters/01-type:
+    devDependencies:
+      '@types/node':
+        specifier: ^24.0.14
+        version: 24.0.14
 
   chapters/02-type_operation: {}
 

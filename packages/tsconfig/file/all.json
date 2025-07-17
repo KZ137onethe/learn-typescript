@@ -14,6 +14,12 @@
     ],
 
     // * 其他编译配置
+    // TS编译器在第一次编译之后会生成一个存储编译信息的文件，第二次编译会在第一次的基础上进行增量编译，可以提高编译的速度
+    "incremental":false,
+    // 增量编译文件的存储位置
+    "tsBuildInfoFile": "./ts-build",
+    // 允许编译器编译JS，JSX文件
+    "allowJs":false,
     // 控制 JSX 的编译模式, 如：preserve，则保留 JSX 语法不转换，生成 .jsx 或 .tsx 文件等等
     "jsx": "preserve",
     // 指定 JSX 的生成函数，如：h，则使用 h 作为创建函数
@@ -68,6 +74,8 @@
         "./namespace"
       ]
     },
+    // 用于 虚拟合并多个目录 的配置选项，主要解决模块路径解析的问题。它允许 TypeScript 编译器将多个物理目录视为一个逻辑上的根目录，从而简化模块导入路径和类型检查。
+    "rootDirs": ["./src", "./types", "./namespace"],
     // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
     "moduleResolution": "node",
     // 允许导入JSON
@@ -76,6 +84,30 @@
     // * 输入与输出控制
     // 指定输入文件目录(用于输入)，用于控制输出目录结构
     "rootDir": "./src",
+    // 指定输出目录
+    "outDir":"./dist",
+    // 删除注释
+    "removeComments": true,
+    // 不输出文件，即编译后不会产生任何的JavaScript文件
+    "noEmit": false,
+    // 打印诊断信息
+    "diagnostics":true,
+    // 生成.d.ts文件，开启后会自动生成声明文件
+    "declaration": false,
+    // 声明文件存放目录，显式指定时，需要将 declaration 置为true
+    // "declarationDir": "./types",
+    // 只生成声明文件，而不会生成js文件
+    "emitDeclarationOnly": false,
+    // 生成目标文件的sourceMap文件
+    "sourceMap": false,
+    // 生成目标文件的inline SourceMap，inline SourceMap会包含在生成的js文件中
+    "inlineSourceMap": false,
+    // 为声明文件生成sourceMap
+    "declarationMap": false,
+    // 打印输出文件
+    "listEmittedFiles": true,
+    // 打印编译后的文件
+    "listFiles": false,
 
     // * 类型声明文件
     // 声明文件目录，默认时node_modules/@types
@@ -89,15 +121,26 @@
     // 装饰器的声明触发某些类型的元数据的实验性支持
     "emitDecoratorMetadata": true,
     // 使用现代类字段定义
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": true
   },
   // 指定一个匹配列表（属于自动指定该路径下的所有ts相关文件）
   "include": [
     "src/**/*",
+    "namespace/*",
     "types/*"
   ],
   // 指定一个排除列表（include的反向操作）
   "exclude": [
     "node_modules"
   ],
+  // 指定哪些文件使用该配置（属于手动一个个指定文件）
+  // "files": [
+  //   "demo.ts"
+  // ],
+  // 使ts-node可以直接执行node.js脚本
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }

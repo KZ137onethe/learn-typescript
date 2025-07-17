@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // * 其他编译配置
+    // TS编译器在第一次编译之后会生成一个存储编译信息的文件，第二次编译会在第一次的基础上进行增量编译，可以提高编译的速度
+    "incremental":false,
+    // 增量编译文件的存储位置
+    "tsBuildInfoFile": "./ts-build",
+    // 允许编译器编译JS，JSX文件
+    "allowJs":false,
+
+    // * 输出控制
+    // 指定输出目录
+    "outDir":"./build",
+    // 删除注释
+    "removeComments": true,
+    // 不输出文件，即编译后不会产生任何的JavaScript文件
+    "noEmit": false,
+    // 打印诊断信息
+    "diagnostics":true,
+    // 生成.d.ts文件，开启后会自动生成声明文件
+    "declaration": false,
+    // 声明文件存放目录，显式指定时，需要将 declaration 置为true
+    // "declarationDir": "./types",
+    // 只生成声明文件，而不会生成js文件
+    "emitDeclarationOnly": false,
+    // 生成目标文件的sourceMap文件
+    "sourceMap": false,
+    // 生成目标文件的inline SourceMap，inline SourceMap会包含在生成的js文件中
+    "inlineSourceMap": false,
+    // 为声明文件生成sourceMap
+    "declarationMap": false,
+    // 打印输出文件
+    "listEmittedFiles": true,
+    // 打印编译后的文件
+    "listFiles": false
+  }
+}

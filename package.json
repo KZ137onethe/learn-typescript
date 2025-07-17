@@ -10,11 +10,17 @@
     "pnpm": ">=9.15.2",
     "typescript": ">=5.6.0"
   },
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf **/node_modules --glob",
+    "reinstall": "pnpm clean && pnpm i"
+  },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14"
   }
 }

@@ -2,9 +2,4 @@
   "extends": "../../packages/tsconfig/file/browser.json",
   "compilerOptions": {},
   "include": [],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
 }
