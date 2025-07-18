@@ -1,7 +1,9 @@
 packages:
-  - "chapters/*"
-  - "packages/*"
-  - "playground/*"
+  - chapters/*
+  - packages/*
+  - playground/*
 
 catalog:
-  "@types/node": ^24.0.14
+  ts-node: ^10.9.2
+  typescript: ^5.8.3
+  '@types/node': 20.19.8

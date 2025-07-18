@@ -1,5 +1,5 @@
 {
-  "extends": "../../packages/tsconfig/file/browser.json",
+  "extends": "@learn-typescript/tsconfig/file/web.json",
   "compilerOptions": {},
   "include": []
 }

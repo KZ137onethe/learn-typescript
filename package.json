@@ -17,10 +17,9 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
-  "devDependencies": {
-    "@types/node": "^24.0.14"
+    "ts-node": "catalog:",
+    "typescript": "catalog:",
+    "@learn-typescript/tsconfig": "workspace:*",
+    "@learn-typescript/types": "workspace:*"
   }
 }

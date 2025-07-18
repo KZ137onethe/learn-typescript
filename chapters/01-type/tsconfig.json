@@ -1,12 +1,14 @@
 {
-  "extends": "../../packages/tsconfig/file/node.json",
+  "extends": "@learn-typescript/tsconfig/file/node.json",
   "compilerOptions": {
+    // 指定入口目录
+    "rootDir": "./src",
     // 指定输出目录
-    "outDir":"./build",
+    "outDir": "./build",
     "baseUrl": "./",
-    "types":[]
+    "paths": {
+      "types": ["./types"]
+    }
   },
-  "include": [
-    "./src"
-  ],
+  "include": ["src", "types"]
 }

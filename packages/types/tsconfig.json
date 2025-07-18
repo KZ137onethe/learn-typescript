@@ -1,0 +1,7 @@
+{
+  "extends": "@learn-typescript/tsconfig/part/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+  },
+  "include": ["src"]
+}
