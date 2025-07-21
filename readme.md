@@ -6,4 +6,9 @@
 
    如：`compilerOptions`中的`typeRoots`、`types`、`rootDir`、`outDir`、`baseUrl`等等
 
-2. 
+   因为：
+
+   1. TypeScript 的所有路径配置都是**相对于包含该配置的 json 文件**
+   2. 继承时不会自动调整路径
+
+   
