@@ -39,11 +39,23 @@ importers:
         specifier: workspace:*
         version: link:../../packages/types
 
-  chapters/02-type_operation: {}
+  chapters/02-type_operation:
+    devDependencies:
+      '@learn-typescript/types':
+        specifier: workspace:*
+        version: link:../../packages/types
 
-  chapters/03-function_and_classes: {}
+  chapters/03-function_and_classes:
+    devDependencies:
+      '@learn-typescript/types':
+        specifier: workspace:*
+        version: link:../../packages/types
 
-  packages/tsconfig: {}
+  packages/tsconfig:
+    devDependencies:
+      '@types/node':
+        specifier: 'catalog:'
+        version: 20.19.8
 
   packages/types:
     devDependencies:

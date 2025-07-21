@@ -1,19 +1,26 @@
-import type { NumAndStr } from "types"
+// const NumAndStr = require("types")
 
-// * any 类型
-function f1(a: any) {
-  a.b(); // OK
-}
+// // * any 类型
+// function f1(a: any) {
+//   a.b(); // OK
+// }
 
-function f2(a: unknown) {
-  // @ts-expect-error: “a”的类型为“未知”。
-  a.b();
-}
+// function f2(a: unknown) {
+//   // @ts-expect-error: “a”的类型为“未知”。
+//   a.b();
+// }
 
 // * unknown 类型
 let name1: unknown = '123'
 // @ts-expect-error: 不能将类型“unknown”分配给类型“string”。
-let name2: NumAndStr = name1
+let name2: number = name1
 // 这样就没问题 any类型是可以的
 let name3: any = '123'
-let name4: NumAndStr = name3
+let name4: number = name3
+
+module.exports = {
+  name1,
+  name2,
+  name3,
+  name4
+}

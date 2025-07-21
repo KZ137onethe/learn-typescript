@@ -1,5 +1,12 @@
 {
   "extends": "@learn-typescript/tsconfig/file/web.json",
-  "compilerOptions": {},
-  "include": [],
+  "compilerOptions": {
+        // 指定入口目录
+    "rootDir": "./src",
+    // 指定输出目录
+    "outDir": "./build",
+    "baseUrl": "./",
+    "typeRoots": ["node_modules/@types", "types", "node_modules/@learn-typescript/types/node_modules/@types"]
+  },
+  "include": ["src", "types"],
 }

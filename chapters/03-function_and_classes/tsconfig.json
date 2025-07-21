@@ -1,5 +1,13 @@
 {
   "extends": "@learn-typescript/tsconfig/file/web.json",
-  "compilerOptions": {},
-  "include": []
+  "compilerOptions": {
+    // 指定入口目录
+    "rootDir": "./src",
+    // 指定输出目录
+    "outDir": "./build",
+    "baseUrl": "./",
+    // 声明文件目录，默认时node_modules/@types，解析顺序是从前往后的，越前面的越优先
+    "typeRoots": ["node_modules/@types", "types", "node_modules/@learn-typescript/types/node_modules/@types"]
+  },
+  "include": ["src", "types"],
 }
