@@ -2,24 +2,32 @@
   "name": "learn-typescript",
   "version": "1.0.0",
   "description": "学习typescript的一个仓库",
-  "main": "index.ts",
   "author": "kz137onethe",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.ts",
   "engines": {
-    "node": ">=20.17.0",
     "rimraf": ">=6.0.0",
-    "pnpm": ">=9.15.2",
     "typescript": ">=5.6.0"
   },
   "scripts": {
     "clean": "rimraf **/node_modules --glob",
-    "reinstall": "pnpm clean && pnpm i"
+    "reinstall": "pnpm clean && pnpm i",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix"
   },
-  "keywords": [],
-  "license": "ISC",
   "dependencies": {
-    "ts-node": "catalog:",
-    "typescript": "catalog:",
     "@learn-typescript/tsconfig": "workspace:*",
     "@learn-typescript/types": "workspace:*"
+  },
+  "volta": {
+    "node": "24.11.1",
+    "pnpm": "10.22.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "eslint": "catalog:",
+    "ts-node": "catalog:",
+    "typescript": "catalog:"
   }
 }

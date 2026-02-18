@@ -14,8 +14,8 @@ function loadFromDatabase(id) {
   };
 }
 
-let s = getInputSomething();
-let id = Number.parseInt(s);
+const s = getInputSomething();
+const id = Number.parseInt(s);
 
 const { name, age } = loadFromDatabase(id);
 console.log(name, age);

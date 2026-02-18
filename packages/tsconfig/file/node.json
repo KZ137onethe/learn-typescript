@@ -17,7 +17,7 @@
     // 不输出文件，即编译后不会产生任何的JavaScript文件
     "noEmit": false,
     // 生成目标文件的sourceMap文件
-    "sourceMap": true,
+    "sourceMap": true
 
     // * 类型声明文件
     // 声明文件目录，默认时node_modules/@types

@@ -6,26 +6,22 @@
     // 生成代码的模板标准
     "module": "ESNext",
     // TS 需要引入的库，即声明文件，es5默认引用了dom、es5、scripthost,如需要使用es的高级版本特性，通常需要配置，如es8的数组新特性需要引入"ES2019.Array"
-    "lib": [
-      "DOM",
-      "ES2015",
-      "ScriptHost",
-      "ES2019.Array",
-    ],
+    "lib": ["DOM", "ES2015", "ScriptHost", "ES2019.Array"],
 
     // * 其他编译配置
     // TS编译器在第一次编译之后会生成一个存储编译信息的文件，第二次编译会在第一次的基础上进行增量编译，可以提高编译的速度
-    "incremental":false,
+    "incremental": false,
     // 增量编译文件的存储位置
     "tsBuildInfoFile": "./ts-build",
     // 允许编译器编译JS，JSX文件
-    "allowJs":false,
+    "allowJs": false,
     // 控制 JSX 的编译模式, 如：preserve，则保留 JSX 语法不转换，生成 .jsx 或 .tsx 文件等等
     "jsx": "preserve",
     // 指定 JSX 的生成函数，如：h，则使用 h 作为创建函数
     "jsxFactory": "React.createElement",
     // 用于控制迭代行为兼容性的编译选项。它的作用是在将代码编译到较旧的 JavaScript 版本（如 ES5/ES3）时，更精确地模拟现代 JavaScript（ES6+）的迭代协议。
     "downlevelIteration": true,
+    // eslint-disable-next-line style/max-len
     // 控制 TypeScript 如何确定文件是否为 脚本或模块。 "auto"（默认）、"legacy"（import 和 export 语句来确定文件是否为模块）、"force"（确保每个非声明文件都被视为模块）。
     "moduleDetection": "force",
 
@@ -64,15 +60,9 @@
     // 路径映射，相对于baseUrl
     "paths": {
       // 如使用jquery时不想使用默认版本，需要手动指定版本，可进行如下配置
-      "@jquery": [
-        "node_modules/jquery/dist/jquery.min.js"
-      ],
-      "@/*": [
-        "./src"
-      ],
-      "namespace/*": [
-        "./namespace"
-      ]
+      "@jquery": ["node_modules/jquery/dist/jquery.min.js"],
+      "@/*": ["./src"],
+      "namespace/*": ["./namespace"]
     },
     // 用于 虚拟合并多个目录 的配置选项，主要解决模块路径解析的问题。它允许 TypeScript 编译器将多个物理目录视为一个逻辑上的根目录，从而简化模块导入路径和类型检查。
     "rootDirs": ["./src", "./types", "./namespace"],
@@ -85,13 +75,13 @@
     // 指定输入文件目录(用于输入)，用于控制输出目录结构
     "rootDir": "./src",
     // 指定输出目录
-    "outDir":"./dist",
+    "outDir": "./dist",
     // 删除注释
     "removeComments": true,
     // 不输出文件，即编译后不会产生任何的JavaScript文件
     "noEmit": false,
     // 打印诊断信息
-    "diagnostics":true,
+    "diagnostics": true,
     // 生成.d.ts文件，开启后会自动生成声明文件
     "declaration": false,
     // 声明文件存放目录，显式指定时，需要将 declaration 置为true
@@ -124,15 +114,9 @@
     "useDefineForClassFields": true
   },
   // 指定一个匹配列表（属于自动指定该路径下的所有ts相关文件）
-  "include": [
-    "src/**/*",
-    "namespace/*",
-    "types/*"
-  ],
+  "include": ["src/**/*", "namespace/*", "types/*"],
   // 指定一个排除列表（include的反向操作）
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   // 指定哪些文件使用该配置（属于手动一个个指定文件）
   // "files": [
   //   "demo.ts"

@@ -1,23 +1,23 @@
 {
   "name": "@learn-typescript/types",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.12.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "default": "./src/index.ts"
     }
   },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@types/node": "catalog:"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.12.1"
+  }
 }
