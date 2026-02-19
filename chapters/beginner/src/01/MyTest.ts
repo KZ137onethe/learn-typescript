@@ -3,8 +3,9 @@ function getInputSomething(): string {
 }
 
 function loadFromDatabase(id: number): void | Record<string, any> {
-  if (Number.isNaN(id))
+  if (Number.isNaN(id)) {
     return;
+  }
 
   // .... load from database
   return {
