@@ -6,7 +6,7 @@
 
 2. [重学TypeScript - 课程仓库](https://github.com/aimingoo/jike2)
 
-3. [Typescript总结文档](https://www.yuque.com/guanhai-egfkz/ky1xx8/cwg04puuahy4xnq4?singleDoc# 《TypeScript 文档》)
+3. [Typescript总结文档](https://www.yuque.com/guanhai-egfkz/ky1xx8/cwg04puuahy4xnq4#)
 
 ## 介绍
 
