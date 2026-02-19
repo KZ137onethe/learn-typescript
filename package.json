@@ -13,8 +13,8 @@
   "scripts": {
     "clean": "rimraf **/node_modules --glob",
     "reinstall": "pnpm clean && pnpm i",
-    "lint": "npx eslint",
-    "lint:fix": "npx eslint --fix"
+    "lint": "npx eslint --ignore-pattern '**/*.js'",
+    "lint:fix": "npx eslint --ignore-pattern '**/*.js' --fix"
   },
   "dependencies": {
     "@learn-typescript/tsconfig": "workspace:*",
