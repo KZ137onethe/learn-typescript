@@ -4,11 +4,7 @@
     "baseUrl": "./",
     // 指定入口目录
     "rootDir": "./src",
-    "typeRoots": [
-      "node_modules/@types",
-      "types",
-      "node_modules/@learn-typescript/types/node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types", "types"],
     // 指定输出目录
     "outDir": "./build"
   },

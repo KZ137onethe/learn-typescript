@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
     "eslint": "catalog:",
     "ts-node": "catalog:",
     "typescript": "catalog:"
